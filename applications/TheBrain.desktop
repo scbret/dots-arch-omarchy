@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=TheBrain
+Comment=TheBrain
+Exec=chromium --new-window --ozone-platform=wayland --app="https://app.thebrain.com/brains/" --name="TheBrain" --class="TheBrain"
+Terminal=false
+Type=Application
+Icon=/home/steve/.local/share/applications/icons/Brain.png
+StartupNotify=true

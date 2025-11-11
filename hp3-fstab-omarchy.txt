@@ -1,0 +1,24 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/root
+UUID=7633c9b1-f7b8-4b8d-bd97-f73ac231c952	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/root	0 0
+
+# /dev/mapper/root
+UUID=7633c9b1-f7b8-4b8d-bd97-f73ac231c952	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/home	0 0
+
+# /dev/mapper/root
+UUID=7633c9b1-f7b8-4b8d-bd97-f73ac231c952	/var/cache/pacman/pkg	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/cache	0 0
+
+# /dev/mapper/root
+UUID=7633c9b1-f7b8-4b8d-bd97-f73ac231c952	/var/log  	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/log	0 0
+
+# /dev/nvme1n1p1
+UUID=582D-17DD      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /mnt/data
+UUID=012ce956-1242-4fcd-b6ef-30e7579bcf2a /mnt/data      ext4    defaults 0 2
+
+# /mnt/nvmd
+UUID=24accf5e-d17f-4871-96c7-a55d86a0d70a /mnt/nvmd      ext4    defaults 0 2

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=YouTubeTV
+Comment=YouTubeTV
+Exec=omarchy-launch-webapp "https://tv.youtube.com/"
+Terminal=false
+Type=Application
+Icon=/home/steve/.local/share/applications/icons/YouTube.png
+StartupNotify=true

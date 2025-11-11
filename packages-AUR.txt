@@ -1,0 +1,16 @@
+1password-beta 8.11.6_25.BETA-25
+1password-cli 2.31.1-1
+lazydocker-bin 0.24.1-1
+lazydocker-bin-debug 0.24.1-1
+localsend-bin 1.17.0-1
+obsidian-bin 1.8.10-2
+ttf-ia-writer 20181225-1
+typora 1.10.8-1
+typora-debug 1.10.8-1
+tzupdate 3.1.0-1
+tzupdate-debug 3.1.0-1
+ufw-docker 250710-1
+walker-bin 0.13.26-1
+walker-bin-debug 0.13.26-1
+wl-screenrec 0.1.7-1
+wl-screenrec-debug 0.1.7-1
