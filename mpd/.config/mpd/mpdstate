@@ -1,0 +1,27 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+audio_device_state:1:Visualizer feed
+state: pause
+current: 8
+time: 116.956
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: 
+playlist_begin
+0:Bread/Best Of Bread/01 - Make It With You (LP Version).mp3
+1:Bread/Best Of Bread/06 - If.mp3
+2:Bread/Best Of Bread/04 - Baby I'm-A Want You (LP Version).mp3
+3:Bread/Best Of Bread/02 - Everything I Own.mp3
+4:Bread/Best Of Bread/13 - Guitar Man.mp3
+5:Frankie Valli & The Four Seasons/The Very Best Of Frankie Valli & The 4 Seasons (US Release)/01-01- Sherry.mp3
+6:Frankie Valli & The Four Seasons/The Very Best Of Frankie Valli & The 4 Seasons (US Release)/01-11- Working My Way Back To You.mp3
+7:Frankie Valli & The Four Seasons/The Very Best Of Frankie Valli & The 4 Seasons (US Release)/01-15- Cant Take My Eyes Off You.mp3
+8:Frankie Valli & The Four Seasons/The Very Best Of Frankie Valli & The 4 Seasons (US Release)/01-16- My Eyes Adored You.mp3
+9:Frankie Valli & The Four Seasons/The Very Best Of Frankie Valli & The 4 Seasons (US Release)/01-18- Who Loves You.mp3
+10:Frankie Valli & The Four Seasons/The Very Best Of Frankie Valli & The 4 Seasons (US Release)/01-19- December, 1963 (Oh What A Night!).mp3
+playlist_end
