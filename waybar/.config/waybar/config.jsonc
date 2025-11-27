@@ -123,10 +123,7 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
-<<<<<<< HEAD
     "format-off": "󰂲",
-=======
->>>>>>> 5328c863236f42d73109b671f28b81b15441e9a0
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
