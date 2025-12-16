@@ -195,9 +195,20 @@ fo() {
   fi
 }
 
-finder() {
+findr() {
     local dir
     dir=$(find /home/$USER -maxdepth 3 -type d,l | fzf)
+    if [[ -n "$dir" ]]; then
+        cd "$dir" || return
+    fi
+}
+
+finder() {
+    local dir
+    # Search /home/$USER and /data
+    # Note: Corrected '-type d,l' to '\( -type d -o -type l \)' for standard find syntax
+    dir=$(find /home/$USER /data -maxdepth 3 \( -type d -o -type l \) 2>/dev/null | fzf)
+    
     if [[ -n "$dir" ]]; then
         cd "$dir" || return
     fi
