@@ -1,4 +1,0 @@
-# Extra autostart processes
-# exec-once = uwsm app -- my-service
-exec-once = uwsm app meteo-qt
-#exec-once = bash -lc '~/.config/eww/start_eww.sh'
