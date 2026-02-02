@@ -83,7 +83,7 @@ alias w11='source /home/steve/.scripts/win11.sh'
 vw() {
     if command -v kitty >/dev/null 2>&1; then
         if [ -n "$DISPLAY" ]; then
-            kitty --class VW -e nvim -c VimwikiIndex & disown
+            kitty --class VW -e nvim -c VimwikiIndex > /dev/null 2>&1 & disown
             return
         else
             printf '%s\n' 'Alacritty is installed but no GUI session detected. Falling back to nvim.'
