@@ -158,7 +158,7 @@ alias ht='htop'
 alias bt='btop'
 alias fp="\$(fzf --reverse --preview 'bat --style=numbers --color=always --line-range :500 {}')"
 alias fp1="fzf --reverse --preview='bat --color=always --line-range :500 {}' --.scriptsd shift-up:preview-page-up,shift-down:preview-page-down"
-alias fd='finder'
+alias ff='finder'
 alias tl='task list'
 alias tw='task waiting'
 alias tm='tmux'
