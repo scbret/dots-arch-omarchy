@@ -28,6 +28,16 @@ alias bmed='echo 10000 | sudo tee /sys/class/backlight/intel_backlight/brightnes
 alias cond='conda deactivate'
 alias cona='conda activate'
 
+#==============================================================
+# playerctl
+# ============================================================
+alias pcp="playerctl pause"
+alias pcl="playerctl play"
+alias pcs="playerctl stop"
+alias pcn="playerctl next"
+alias pcb="playerctl previous"
+
+
 # ============================================================================
 # SYSTEM INFO
 # ============================================================================
@@ -137,7 +147,7 @@ alias kc='killall -9 conky'
 
 # git section
 alias g='git'
-alias ga='g add .'
+alias gad='g add .'
 gc() {
     local hostname=$(hostnamectl | awk -F ': ' '/Static hostname/ {print $2}')
     g commit -m "$hostname"
