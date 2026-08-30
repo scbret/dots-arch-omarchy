@@ -33,3 +33,6 @@ o.bind("SUPER + SHIFT + E", "exec", "thunderbird")
 
 hl.unbind("SUPER + SHIFT + O")
 o.bind("SUPER + SHIFT + O", "exec", "thunderbird -calendar")
+hl.unbind("SUPER + SHIFT + ALT + E")
+o.bind("SUPER + SHIFT + ALT + E", "exec", "thunderbird -compose")
+
