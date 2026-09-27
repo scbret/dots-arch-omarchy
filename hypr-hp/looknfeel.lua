@@ -25,6 +25,12 @@
 --   },
 -- })
 
+-- Terminal transparency
+ hl.window_rule({
+  match = { tag = "terminal" },
+  opacity = "0.90 0.75",
+})
+
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#animations
 -- hl.config({
 --   animations = {
