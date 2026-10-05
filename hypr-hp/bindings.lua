@@ -35,3 +35,4 @@ hl.unbind("SUPER + SHIFT + ALT + E")
 o.bind("SUPER + SHIFT + ALT + E", "exec", "thunderbird -compose")
 hl.unbind("SUPER + SHIFT +E")
 o.bind("SUPER + SHIFT + E", "exec", "thunderbird")
+

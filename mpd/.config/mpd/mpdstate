@@ -2,8 +2,13 @@ sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:Visualizer feed
 state: pause
+<<<<<<< HEAD
 current: 7
 time: 192.052
+=======
+current: 10
+time: 191.368
+>>>>>>> b4f0e3b (X11)
 random: 0
 repeat: 0
 single: 0
