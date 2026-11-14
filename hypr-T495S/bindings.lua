@@ -27,16 +27,7 @@
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
---
--- Thunderbird
-hl.unbind("SUPER + SHIFT + O")
-o.bind("SUPER + SHIFT + O", "exec", "thunderbird -calendar")
-hl.unbind("SUPER + SHIFT + ALT + E")
-o.bind("SUPER + SHIFT + ALT + E", "exec", "thunderbird -compose")
-hl.unbind("SUPER + SHIFT +E")
-o.bind("SUPER + SHIFT + E", "exec", "thunderbird")
 
-<<<<<<< HEAD
 -- Independent workspace slots for each monitor.
 require("hypr.monitor-workspaces")
 
@@ -47,5 +38,7 @@ hl.unbind("SUPER + SHIFT + ALT + E")
 o.bind("SUPER + SHIFT + ALT + E", "exec", "thunderbird -compose")
 hl.unbind("SUPER + SHIFT +E")
 o.bind("SUPER + SHIFT + E", "exec", "thunderbird")
-=======
->>>>>>> b4f0e3b (X11)
+
+-- Quake console
+hl.unbind("SUPER + grave")
+o.bind("CTRL + slash", "Toggle Quake console", hl.dsp.workspace.toggle_special("qconsole"))
