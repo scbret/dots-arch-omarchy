@@ -6,7 +6,13 @@
 -- "auto" lets Hyprland pick per display.
 local omarchy_monitor_scale = "auto"
 hl.monitor({ output = "", mode = "preferred", position = "auto", scale = omarchy_monitor_scale })
-hl.monitor({ output = "eDP-1", mode = "preferred", position = "auto", scale = 1.6 })
+hl.monitor({ output = "eDP-1", mode = "preferred", position = "auto", scale = 2 })
+
+-- Two Dell U2415s stacked vertically (matched by serial so dock port order doesn't matter).
+-- Top: serial ...185L. Bottom: serial ...1J7L. Swap the positions if it's backwards.
+-- With the lid closed, Omarchy turns eDP-1 off automatically (clamshell mode).
+hl.monitor({ output = "desc:Dell Inc. DELL U2415 PVJVW52N1J7L", mode = "1920x1200@59.95", position = "0x1200", scale = 1 })
+hl.monitor({ output = "desc:Dell Inc. DELL U2415 PVJVW52N185L", mode = "1920x1200@59.95", position = "0x0", scale = 1 })
 
 -- Configure a specific monitor.
 -- hl.monitor({ output = "DP-2", mode = "2560x1440@144", position = "0x0", scale = 1 })
