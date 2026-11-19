@@ -113,7 +113,7 @@ mdn() {
         fi
     else
         echo "Error: kitty not installed, running in current terminal." >&2
-        /home/steve/.scripts/mdnotes.sh &
+        /home/steve/.scripts/mdnotes.sh
     fi
 }
 
