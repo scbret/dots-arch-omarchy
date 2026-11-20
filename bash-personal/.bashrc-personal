@@ -193,6 +193,11 @@ alias wf='curl wttr.in/mason+city?u'
 alias gw='bash ~/.scripts/wmap-weather.sh'
 alias gwc='bash ~/.scripts/wmap-weather-city.sh'
 
+# Gemini Antigravity
+alias ant='cd ~/Gemini && agy'
+# Claude code
+alias cld='cd ~/Work && claude'
+
 # <<< open or edit previewed files with fzf >>> #
 export FZF_DEFAULT_OPTS='--height 75% --layout=reverse --border'
 
