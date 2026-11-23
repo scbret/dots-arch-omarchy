@@ -43,7 +43,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-
-# Added by Antigravity CLI installer
-export PATH="/home/steve/.local/bin:$PATH"
