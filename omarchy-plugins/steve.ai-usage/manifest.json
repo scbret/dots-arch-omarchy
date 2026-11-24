@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "steve.ai-usage",
+  "name": "AI Usage",
+  "version": "1.0.0",
+  "author": "Steve",
+  "license": "MIT",
+  "description": "ClaudeBar-style bar widget and popover tracking 5-hour session and 7-day weekly quota remaining for Antigravity and Claude.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "AI Usage",
+    "description": "Inline Antigravity and Claude session/weekly quota remaining percentages with color-coded health indicators and a detail popover.",
+    "category": "AI",
+    "allowMultiple": false,
+    "defaultSection": "left",
+    "defaults": {
+      "refreshIntervalSec": 3600,
+      "warnRemainingPercent": 40,
+      "criticalRemainingPercent": 15
+    },
+    "schema": [
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Refresh interval (seconds)",
+        "min": 60,
+        "max": 7200,
+        "step": 60,
+        "defaultValue": 3600
+      },
+      {
+        "key": "warnRemainingPercent",
+        "type": "integer",
+        "label": "Warning threshold (% remaining)",
+        "min": 2,
+        "max": 99,
+        "step": 5,
+        "defaultValue": 40
+      },
+      {
+        "key": "criticalRemainingPercent",
+        "type": "integer",
+        "label": "Critical threshold (% remaining)",
+        "min": 0,
+        "max": 98,
+        "step": 5,
+        "defaultValue": 15
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "steve.spotify",
+  "name": "Spotify Now Playing",
+  "version": "1.0.0",
+  "author": "Steve",
+  "description": "Displays the currently playing Spotify track in the Omarchy bar",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Spotify Now Playing",
+    "category": "Media",
+    "defaultSection": "left",
+    "allowMultiple": false
+  }
+}
