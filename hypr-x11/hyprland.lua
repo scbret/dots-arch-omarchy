@@ -27,5 +27,31 @@ require("default.hypr.toggles")
 
 -- Add any other personal Hyprland configuration below.
 -- o.window("qemu", { workspace = "5" })
-o.window("Spotify", { workspace = "9" })
-o.window("org.mozilla.Thunderbird", { workspace = "4" })
+--
+-- Place apps on a per-monitor workspace slot (1-10) so they match SUPER+<n>
+-- on whichever monitor is active, whether docked or undocked.
+_G._steve_app_workspace_slots = {
+  ["Spotify"] = 9,
+  ["org.mozilla.Thunderbird"] = 4,
+}
+
+if not _G._steve_app_workspace_hook then
+  _G._steve_app_workspace_hook = true
+  hl.on("window.open", function(window)
+    if not window or not window.class then return end
+    local slot = _G._steve_app_workspace_slots[window.class]
+    if not slot then return end
+
+    local monitor = window.monitor or hl.get_active_monitor()
+    if not monitor then return end
+
+    local id = o.workspaces.workspace_id(monitor, slot)
+    if window.workspace and window.workspace.id == id then return end
+
+    hl.dispatch(hl.dsp.window.move({
+      workspace = tostring(id),
+      follow = true,
+      window = "address:" .. window.address,
+    }))
+  end)
+end
